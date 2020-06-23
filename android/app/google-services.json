@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "568044411101",
+    "firebase_url": "https://happy-for-helping.firebaseio.com",
+    "project_id": "happy-for-helping",
+    "storage_bucket": "happy-for-helping.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568044411101:android:5f9cec6689396371d56334",
+        "android_client_info": {
+          "package_name": "com.happy_for_helping.ngo_happy_to_help"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568044411101-o5p2gje1vrng62n6k2alnh57ih6il91t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.happy_for_helping.ngo_happy_to_help",
+            "certificate_hash": "28bdcdc6af315459d7b761f5c99e04cf0aedffc1"
+          }
+        },
+        {
+          "client_id": "568044411101-1la9cl931a5jb5k77q6l4b1f1ptbr4q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZp5TCDbhCRBHQyPla6-pkJADQexAJovA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568044411101-1la9cl931a5jb5k77q6l4b1f1ptbr4q3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
