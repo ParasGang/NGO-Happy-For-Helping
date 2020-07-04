@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:ngo_happy_to_help/screens/delete_thought.dart';
 
 class Database {
   final CollectionReference _reference =
@@ -65,6 +66,15 @@ class Database {
 
   Future deleteDonar(String uid) async {
     CollectionReference _ref = Firestore.instance.collection('donation');
+    try {
+      await _ref.document(uid).delete();
+    } catch (e) {
+      print(e);
+    }
+  }
+
+  Future deleteThought(String uid) async {
+    CollectionReference _ref = Firestore.instance.collection('thought');
     try {
       await _ref.document(uid).delete();
     } catch (e) {

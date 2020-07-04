@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ngo_happy_to_help/screens/about.dart';
 import 'package:ngo_happy_to_help/screens/add_events.dart';
 import 'package:ngo_happy_to_help/screens/contact_us.dart';
+import 'package:ngo_happy_to_help/screens/delete_thought.dart';
 import 'package:ngo_happy_to_help/screens/donation_details.dart';
 import 'package:ngo_happy_to_help/screens/entry_page.dart';
 import 'package:ngo_happy_to_help/screens/events.dart';
@@ -242,6 +243,27 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                           ),
                         )
                       : ListTile(),
+                      role == 1
+                      ? ListTile(
+                          onTap: () {
+                            Navigator.of(context).pop();
+                            Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(builder: (context) {
+                              return DeleteThought();
+                            }));
+                          },
+                          leading: Icon(
+                            Icons.delete,
+                            color: Color(0xff707070),
+                          ),
+                          title: Text(
+                            "Delete Thought",
+                            style: TextStyle(
+                                color: Color(0xff707070),
+                                fontSize: SizeConfig.safeBlockHorizontal * 4),
+                          ),
+                        )
+                      : ListTile()
                 ],
               ),
             ),
